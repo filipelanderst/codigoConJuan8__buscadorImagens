@@ -75,11 +75,11 @@ function mostrarImagenes(imagenes, paginas) {
   }
 
   imagenes.forEach(imagen => {
-    const {likes, views, previewURL, largeImageURL} = imagen;
+    const {likes, views, webformatURL, largeImageURL} = imagen;
     resultado.innerHTML += `
             <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-3 ">
                 <div class="bg-white shadow ">
-                    <img class="w-full block rounded-t-md " src=${previewURL} alt={tags} />
+                    <img class="w-full block rounded-t-md " src=${webformatURL} alt={tags} />
                     <div class="pt-4 px-2 w-full">
                         <p class="card-text"><span class="font-bold">${likes}</span> Curtidas</p>
                         <p class="card-text"><span class="font-bold">${views}</span> Visualizações </p>
